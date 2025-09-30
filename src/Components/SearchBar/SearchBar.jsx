@@ -6,7 +6,7 @@ const SearchBar = ({ value, handleSearchKey, clearSearch, formSubmit }) => {
       <form onSubmit={formSubmit}>
         <input
           type="text"
-          onChange={{ handleSearchKey }}
+          onChange={handleSearchKey}
           placeholder="Search By category"
           value={value}
         />

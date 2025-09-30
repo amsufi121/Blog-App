@@ -34,7 +34,7 @@ const Home = () => {
       <SearchBar
         value={searchKey}
         clearSearch={handleClearSearch}
-        forSubmit={handleSearchSubmit}
+        formSubmit={handleSearchSubmit}
         handleSearchKey={(e) => setSearchKey(e.target.value)}
       />
       {!blogs.length ? <EmptyList /> : <BlogList blogs={blogs} />}
