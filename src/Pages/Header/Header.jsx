@@ -4,13 +4,14 @@ import "./Header.css";
 const Header = () => {
   return (
     <header className="home-header">
-      <h2>Inc, This morning</h2>
+      <h2>Your Daily Tech Companion</h2>
       <h1>
         <span>"</span> Blog <span>"</span>
       </h1>
       <p>
         {" "}
-        Awesome Place to make oneself <br /> productive and etnertained through
+        Explore coding tutorials, AI trends, and the latest in technology 
+      <br /> all in one place.
         daily updates.
       </p>
     </header>

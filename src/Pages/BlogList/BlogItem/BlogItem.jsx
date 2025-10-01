@@ -31,6 +31,7 @@ const BlogItem = ({
         </div>
       </div>
       <Link className="blogItem-link" to={`/blog/${id}`}>
+        See Details
         <FaArrowCircleRight />
       </Link>
     </footer>

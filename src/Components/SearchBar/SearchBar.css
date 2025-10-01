@@ -1,5 +1,5 @@
 .searchBar {
-  background-color: #f0f0f0;
+  background-color: #d0b8a8;
   width: fit-content;
   margin: 2.5rem auto 4rem auto;
   padding: 0.5rem;
@@ -7,6 +7,7 @@
 }
 
 .searchBar form {
+  position: relative; /* 👈 relative kiya */
   display: flex;
   align-items: center;
 }
@@ -15,18 +16,31 @@
   background-color: #f0f0f0;
   outline: none;
   border: none;
+  padding: 8px 30px 8px 8px; /* 👈 right padding diya */
+  border-radius: 5px;
 }
 
 .searchBar span {
-  padding-right: 0.5rem;
+  position: absolute; /* 👈 ab absolute */
+  right: 65px; /* button ke liye space chhod diya */
+  top: 50%;
+  transform: translateY(-50%);
   cursor: pointer;
+  font-size: 16px;
+  color: #333;
+}
+
+.searchBar span:hover {
+  color: red;
 }
 
 .searchBar button {
   outline: none;
   border: none;
-  padding: -0.3rem 1rem;
   border-radius: 5px;
   background-color: #0f52ba;
   color: #fff;
+  padding: 6px 12px;
+  margin-left: 8px;
+  cursor: pointer;
 }

@@ -4,7 +4,7 @@ import { blogList } from "../../config/data";
 import Chip from "../../Components/Chip/Chip";
 import EmptyList from "../../Components/EmptyList/EmptyList";
 import "./Blog.css";
-
+import { FaArrowCircleLeft } from "react-icons/fa";
 const Blog = () => {
   const { id } = useParams();
   const [blog, setBlog] = useState(null);
@@ -19,7 +19,7 @@ const Blog = () => {
   return (
     <div>
       <Link className="blog-goBack" to="/">
-        <span>&#8592;</span> Go Back
+        <FaArrowCircleLeft /> Go Back
       </Link>
       {blog ? (
         <div className="blog-wrap">

@@ -1,5 +1,7 @@
 .home-header {
   text-align: center;
+  background-color: white;
+  border-radius: 20px;
 }
 
 .home-header h2 {
